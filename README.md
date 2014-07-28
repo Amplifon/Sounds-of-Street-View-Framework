@@ -108,7 +108,9 @@ This should match the ID of your HTML element where the Google Street View will 
 This is the latitude position value where your application will start upon load   
 
 **lng**  
-This is the longitude position value where your application will start upon load   
+This is the longitude position value where your application will start upon load  
+
+![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-3.jpg)
 
 **heading**  
 This is the heading position value where your application will start upon load (ie. which direction the user is facing)   
@@ -155,14 +157,18 @@ milliseconds so a 1 second pause between each loop would have a pause value of 1
 #### Debugging your JSON file
 
 If you are unfamiliar with writing JSON then it can be frustrating as a simple comma in the wrong 
-place, or a missing quotation mark can break your application. You can use an online JSON linting 
+place, or a missing quotation mark can break your application (hint shown in image below). You can use an online JSON linting 
 tool to find and remove any errors you may have in your data.
+
+![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-2.jpg)
 
 - [JSONLint](http://jsonlint.com/)
 
 ### Creating your sounds
 
 Creating your sounds can be done in a number of ways. You can either create them yourself, or purchase them from audio sample websites (such as http://audiojungle.net) 
+
+![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-4.jpg)
 
 
 ## Run your application
