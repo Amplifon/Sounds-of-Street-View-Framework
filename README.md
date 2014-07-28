@@ -128,8 +128,11 @@ Each sound has the following properties;
 
 **name**  
 Although the user will not see this name, it can be useful when building your application as 
-the name of each sound object will appear on hover when you view your application in dev mode. 
+the name of each sound object will appear on hover (as shown below) when you view your application in dev mode. 
 You can trigger dev mode by appending ?dev=true to the end of your application URL.
+
+![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-1.jpg
+)
 
 **lat**  
 This is the latitude position where your sound will be positioned on your Street View map  
