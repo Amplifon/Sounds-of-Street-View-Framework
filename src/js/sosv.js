@@ -217,7 +217,12 @@ var SOSV = function(jsonPath){
 		$(document.body)
 			.on('soundLoaded', this.onSoundLoaded)
 			.on('soundLoadError', this.onSoundLoaded)
-			.on('changeLocation', this.onChangeLocation);
+			.on('changeLocation', this.onChangeLocation)
+			.on('panoChanged', this.showUserData)
+			.on('povChanged', this.showUserData)
+			.on('positionChanged', this.showUserData)
+			.on('markerClicked',  this.showMarkerData)
+			.on('markerDragEnd', this.showMarkerData);
 		
 		// Load JSON data
 		$.getJSON(jsonPath, this.onJsonLoaded); 
@@ -249,7 +254,6 @@ var SOSV = function(jsonPath){
 	this.createStreetView = function(data){
 		
 		el = $('#'+data.id);
-		
 		panorama = new google.maps.StreetViewPanorama(document.getElementById(data.id), {
 				
 			position 			: new google.maps.LatLng(data.lat, data.lng),
@@ -265,6 +269,7 @@ var SOSV = function(jsonPath){
 	};
 
 	this.addMarker = function(data){
+		
 		var marker = new google.maps.Marker({
 		    map 		: panorama,
 		    title 		: data.name,
@@ -273,6 +278,14 @@ var SOSV = function(jsonPath){
 		    icon 		: data.icon
 		});
 		markers.push(marker);
+
+		google.maps.event.addListener(marker, 'click', function(e) {
+			$(document.body).trigger('markerClicked', [e, marker, data]);
+		});
+
+		google.maps.event.addListener(marker, "dragend", function(e) { 
+			$(document.body).trigger('markerDragEnd', [e, marker, data]);
+        });
 	};
 
 	this.onPanoChanged = function(e){
@@ -285,6 +298,26 @@ var SOSV = function(jsonPath){
 
 	this.onPovChanged = function(e){
 		el.trigger('povChanged', panorama);
+	};
+
+	this.showUserData = function(e, pano){
+
+		$('#user-pos-debug')
+			.find('.lat-here').text(pano.getPosition().lat()).end()
+			.find('.lng-here').text(pano.getPosition().lng()).end()
+			.find('.heading-here').text(pano.getPov().heading).end()
+			.find('.pitch-here').text(pano.getPov().pitch);
+	};
+
+	this.showMarkerData = function(e, gEvent, marker, data){
+		
+		$('#marker-pos-debug')
+			.find('.m-name').text(data.name).end()
+			.find('.m-lat').text(gEvent.latLng.lat()).end()
+			.find('.m-lng').text(gEvent.latLng.lng()).end()
+			.find('.m-src').text(data.src).end()
+			.find('.m-db').text(data.db).end()
+			.find('.m-pause').text(data.pause);
 	};
 
 	this.loadSounds = function(data){
