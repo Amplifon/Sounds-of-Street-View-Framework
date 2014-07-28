@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SOSV Framework</title>
+
+        <!-- Load dependencies | Google Maps API, and jQuery -->
+        <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+
+        <!-- Load the epiphanysearch fork of Howler.js -->
+        <script src="js/howler.min.js"></script>
+        
+        <!-- Load the Sounds of Street View code -->
+        <script src="js/sosv.js"></script>
+
+        <!-- Your code to create an instance of a Sound of Street View -->
+        <script>
+            $(function(){
+                // Create your Sound of Street View - make sure the path points to your JSON file
+                new SOSV('data/demo.json');
+            });
+        </script>
+
+        <!-- Some basic CSS to make your Sound of Street View full screen -->
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            #pano {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: #000;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- STREET VIEW PANORAMA -->
+        <div id="pano"></div>
+
+    </body>
+</html>
