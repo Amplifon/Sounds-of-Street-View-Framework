@@ -166,7 +166,9 @@ tool to find and remove any errors you may have in your data.
 
 ### Creating your sounds
 
-Creating your sounds can be done in a number of ways. You can either create them yourself, or purchase them from audio sample websites (such as http://audiojungle.net) 
+Creating your sounds can be done in a number of ways. You can either create them yourself, or purchase them from audio sample websites (such as http://audiojungle.net). For a free and easy program to create from scratch or alter sounds, download Audacity at http://audacity.sourceforge.net/download/. 
+
+When exporting sounds from Audacity (or other software of your choice), export at as low quality as possible so that your application loads as quickly as possible. Because you will create a range of different sounds, small quality intricacies aren't as noticeable as normal. We recommend 64kbps as shown below.
 
 ![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-4.jpg)
 
