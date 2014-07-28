@@ -149,7 +149,7 @@ should be a value between 1 and 100, with 1 being very quiet and 100 being very 
 The length of time to wait between each loop of the sound. This is a length of time in 
 milliseconds so a 1 second pause between each loop would have a pause value of 1000.
 
-### Debugging
+#### Debugging your JSON file
 
 If you are unfamiliar with writing JSON then it can be frustrating as a simple comma in the wrong 
 place, or a missing quotation mark can break your application. You can use an online JSON linting 
@@ -157,12 +157,25 @@ tool to find and remove any errors you may have in your data.
 
 - [JSONLint](http://jsonlint.com/)
 
+## Run your application
+
+In order to get your application to run the last thing you need to do is to create a new 
+SOSV object in your custom JavaScript. As the project is using jQuery as a dependency the easiest way 
+is to do it on the jQuery DOM ready. Make sure that the path to your JSON file is correct!
+
+```javascript
+	<script>
+        $(function(){
+            new SOSV('data/demo.json');
+        });
+    </script>
+```
 
 ## License
 
 The MIT License
 
-Copyright (c) 2014 Epiphany Search
+Copyright (c) 2014 Amplifon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
