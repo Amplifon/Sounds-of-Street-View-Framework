@@ -160,6 +160,11 @@ tool to find and remove any errors you may have in your data.
 
 - [JSONLint](http://jsonlint.com/)
 
+### Creating your sounds
+
+Creating your sounds can be done in a number of ways. You can either create them yourself, or purchase them from audio sample websites (such as http://audiojungle.net) 
+
+
 ## Run your application
 
 In order to get your application to run the last thing you need to do is to create a new 
