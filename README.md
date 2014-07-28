@@ -1,4 +1,4 @@
-# SOSV Framework
+# Sounds of Street View Framework
 
 ###A JavaScript library to add sound to a Google Street View experience.
 
