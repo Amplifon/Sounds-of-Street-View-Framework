@@ -5,7 +5,7 @@
 Watch the promotional video for an explanation and overview of what can be achieved 
 with the Sounds of Street View Framework.
 
-[![ScreenShot](https://raw.github.com/epiphanysearch/SoundsOfStreetViewFramework/src/img/vimeo-img.jpg)](https://vimeo.com/101599212)
+[![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/vimeo-img.jpg)](https://vimeo.com/101599212)
 
 Explore three environments created by Amplifon on [the official Sounds of Street View website](http://www.amplifon.co.uk/sounds-of-street-view/).
 
