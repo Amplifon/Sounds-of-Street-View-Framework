@@ -223,6 +223,10 @@ var SOSV = function(jsonPath){
 			.on('positionChanged', this.showUserData)
 			.on('markerClicked',  this.showMarkerData)
 			.on('markerDragEnd', this.showMarkerData);
+
+		if (devMode) {
+			this.addDevModeMarkup();
+		}
 		
 		// Load JSON data
 		$.getJSON(jsonPath, this.onJsonLoaded); 
@@ -300,26 +304,6 @@ var SOSV = function(jsonPath){
 		el.trigger('povChanged', panorama);
 	};
 
-	this.showUserData = function(e, pano){
-
-		$('#user-pos-debug')
-			.find('.lat-here').text(pano.getPosition().lat()).end()
-			.find('.lng-here').text(pano.getPosition().lng()).end()
-			.find('.heading-here').text(pano.getPov().heading).end()
-			.find('.pitch-here').text(pano.getPov().pitch);
-	};
-
-	this.showMarkerData = function(e, gEvent, marker, data){
-		
-		$('#marker-pos-debug')
-			.find('.m-name').text(data.name).end()
-			.find('.m-lat').text(gEvent.latLng.lat()).end()
-			.find('.m-lng').text(gEvent.latLng.lng()).end()
-			.find('.m-src').text(data.src).end()
-			.find('.m-db').text(data.db).end()
-			.find('.m-pause').text(data.pause);
-	};
-
 	this.loadSounds = function(data){
 		
 		// Create all the sounds objects, and store in array
@@ -346,6 +330,41 @@ var SOSV = function(jsonPath){
 			arrSounds[i].playSound();
 			arrSounds[i].onUserMovement(null, panorama);
 		}
+	};
+
+	this.showUserData = function(e, pano){
+
+		$('#user-pos')
+			.find('.user-lat').text(pano.getPosition().lat()).end()
+			.find('.user-lng').text(pano.getPosition().lng()).end()
+			.find('.user-heading').text(pano.getPov().heading).end()
+			.find('.user-pitch').text(pano.getPov().pitch);
+	};
+
+	this.showMarkerData = function(e, gEvent, marker, data){
+		
+		var json = data;
+		delete json["icon"];
+		delete json["draggable"];
+		json["lat"] = gEvent.latLng.lat();
+		json["lng"] = gEvent.latLng.lng();
+		
+		var jsonStr = JSON.stringify(json, null, ' ');
+		$('#marker-pos').find('.json-pre').html(jsonStr);
+	};
+
+	this.addDevModeMarkup = function(){
+
+		var markerPos = $('<div id="marker-pos"></div>');
+		markerPos.append('<h2>Marker</h2>');
+		markerPos.append('<pre class="json-pre"></pre>');
+
+		var userPos = $('<div id="user-pos"></div>');
+		userPos.append('<h2>User</h2>').css({'margin':'0'});
+		userPos.append('<table><tr><td>Lat</td><td class="user-lat"></td></tr><tr><td>Lng</td><td class="user-lng"></td></tr><tr><td>Heading</td><td class="user-heading"></td></tr><tr><td>Pitch</td><td class="user-pitch"></td></tr></table>');
+
+		var debugWrap = $('<div id="debug-wrap"></div>').append(userPos).append(markerPos).css({'position':'absolute','top':'0','right':'0','padding':'.4em','background':'#fff'});
+		$('body').append(debugWrap);
 	};
 
 	this.init();
