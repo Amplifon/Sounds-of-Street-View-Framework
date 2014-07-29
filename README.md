@@ -165,12 +165,13 @@ You can then drag any marker around and place it where the sound is being emitte
 #### Debugging your JSON file
 
 If you are unfamiliar with writing JSON then it can be frustrating as a simple comma in the wrong 
-place, or a missing quotation mark can break your application (hint shown in image below). You can use an online JSON linting 
-tool to find and remove any errors you may have in your data.
+place, or a missing quotation mark can break your application (hint shown in image below). You can use an online [JSON linting 
+tool](http://jsonlint.com/) to find and remove any errors you may have in your data.
+
+- [JSONLint](http://jsonlint.com/)
 
 ![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-2.jpg)
 
-- [JSONLint](http://jsonlint.com/)
 
 ### Creating your sounds
 
