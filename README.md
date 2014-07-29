@@ -160,6 +160,9 @@ By adding **"?dev=true"** to the end of your URL, you will be able to see the ma
 
 You can then drag any marker around and place it where the sound is being emitted from. The JSON code to insert for this sound will update in the panel, ready to copy and paste into your file. It's important to get positioning accurate so that a sound is heard from the correct source - so walk around the marker, as near as possible and keep dragging and dropping till it seems as close as possible. In the best scenario, walk 'on' the sound source and drag the marker to your feet.
 
+![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-2.jpg)
+https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-5.gif)
+
 #### Debugging your JSON file
 
 If you are unfamiliar with writing JSON then it can be frustrating as a simple comma in the wrong 
