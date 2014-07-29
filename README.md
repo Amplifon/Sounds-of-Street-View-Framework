@@ -13,7 +13,7 @@ Explore three environments created by Amplifon on [the official Sounds of Street
 
 - [Google Maps API v3](https://developers.google.com/maps/documentation/javascript/basics)
 - [JQuery](http://jquery.com/)
-- [Howler - (epiphanysearch fork)](https://github.com/epiphanysearch/howler.js)
+- [Howler - (amplifon fork)](https://github.com/Amplifon/howler.js)
 
 ## How to use it
 
@@ -27,9 +27,9 @@ be fairly self explanatory.
 
 The first thing to do is to include the 3 JavaScript dependencies within the head section 
 of your HTML page. Make sure that the version of Howler.js you include is the specific 
-epiphanysearch fork version as this contains extra code to support the 
+Amplifon fork version as this contains extra code to support the 
 use of Web Audio API Low Pass Filters. Using this filter ensures that sounds become brighter 
-when positioned in front of the user. You can also find a minified version of the epiphanysearch 
+when positioned in front of the user. You can also find a minified version of the Amplifon 
 Howler.js in the js/vendor folder of this repo.
 
 ```html
@@ -39,7 +39,7 @@ Howler.js in the js/vendor folder of this repo.
     <!-- Load jQuery -->
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!-- Load the epiphanysearch fork of Howler.js -->
+    <!-- Load the Amplifon fork of Howler.js -->
     <script src="js/vendor/howler.min.js"></script>
 ```
 
