@@ -19,8 +19,8 @@ Explore three environments created by Amplifon on [the official Sounds of Street
 The following explanations are specifically written for those with only a 
 rudimentary understanding of HTML and JavaScript. If you are a developer, or 
 are confident that you have a decent understanding of these technologies, then 
-head straight over to the src folder, and look at the demo HTML file where everything should 
-be fairly self explanatory.
+head straight over to the [demo files in the src folder](https://github.com/Amplifon/Sounds-of-Street-View-Framework/tree/master/src), 
+where everything should be fairly self explanatory.
 
 ### Include the dependencies
 
