@@ -154,6 +154,12 @@ should be a value between 1 and 100, with 1 being very quiet and 100 being very 
 The length of time to wait between each loop of the sound. This is a length of time in 
 milliseconds so a 1 second pause between each loop would have a pause value of 1000.
 
+#### Guide to placing sounds
+
+By adding **"?dev=true"** to the end of your URL, you will be able to see the markers which are normally invisible in your application. To start, once you have a street view location, give a sound the same **lat** and **long** values as this location, then find it by walking away from your start position.
+
+You can then drag any marker around and place it where the sound is being emitted from. The JSON code to insert for this sound will update in the panel, ready to copy and paste into your file. It's important to get positioning accurate so that a sound is heard from the correct source - so walk around the marker, as near as possible and keep dragging and dropping till it seems as close as possible. In the best scenario, walk 'on' the sound source and drag the marker to your feet.
+
 #### Debugging your JSON file
 
 If you are unfamiliar with writing JSON then it can be frustrating as a simple comma in the wrong 
@@ -168,7 +174,7 @@ tool to find and remove any errors you may have in your data.
 
 Creating your sounds can be done in a number of ways. You can either create them yourself, or purchase them from audio sample websites (such as http://audiojungle.net). For a free and easy program to create from scratch or alter sounds, download Audacity at http://audacity.sourceforge.net/download/. 
 
-When exporting sounds from Audacity (or other software of your choice), export at as low quality as possible so that your application loads as quickly as possible. Because you will create a range of different sounds, small quality intricacies aren't as noticeable as normal. We recommend 64kbps as shown below.
+When exporting your MP3s from Audacity (or other software of your choice), export at as low quality as possible so that your application loads as quickly as possible. Because you will create a range of different sounds, small quality intricacies aren't as noticeable as normal. We recommend 64kbps as shown below.
 
 ![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/git-img-4.jpg)
 
