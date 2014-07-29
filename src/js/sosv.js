@@ -346,8 +346,8 @@ var SOSV = function(jsonPath){
 		var json = data;
 		delete json["icon"];
 		delete json["draggable"];
-		json["lat"] = gEvent.latLng.lat();
-		json["lng"] = gEvent.latLng.lng();
+		json["lat"] = ''+gEvent.latLng.lat();
+		json["lng"] = ''+gEvent.latLng.lng();
 		
 		var jsonStr = JSON.stringify(json, null, ' ');
 		$('#marker-pos').find('.json-pre').html(jsonStr);
@@ -355,13 +355,13 @@ var SOSV = function(jsonPath){
 
 	this.addDevModeMarkup = function(){
 
-		var markerPos = $('<div id="marker-pos"></div>');
-		markerPos.append('<h2>Marker</h2>');
-		markerPos.append('<pre class="json-pre"></pre>');
-
 		var userPos = $('<div id="user-pos"></div>');
 		userPos.append('<h2>User</h2>').css({'margin':'0'});
 		userPos.append('<table><tr><td>Lat</td><td class="user-lat"></td></tr><tr><td>Lng</td><td class="user-lng"></td></tr><tr><td>Heading</td><td class="user-heading"></td></tr><tr><td>Pitch</td><td class="user-pitch"></td></tr></table>');
+
+		var markerPos = $('<div id="marker-pos"></div>');
+		markerPos.append('<h2>Marker</h2>');
+		markerPos.append('<pre class="json-pre"></pre>');
 
 		var debugWrap = $('<div id="debug-wrap"></div>').append(userPos).append(markerPos).css({'position':'absolute','top':'0','right':'0','padding':'.4em','background':'#fff'});
 		$('body').append(debugWrap);

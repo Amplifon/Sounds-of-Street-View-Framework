@@ -13,7 +13,6 @@ Explore three environments created by Amplifon on [the official Sounds of Street
 
 - [Google Maps API v3](https://developers.google.com/maps/documentation/javascript/basics)
 - [JQuery](http://jquery.com/)
-- [Howler - (amplifon fork)](https://github.com/Amplifon/howler.js)
 
 ## How to use it
 
@@ -25,22 +24,16 @@ be fairly self explanatory.
 
 ### Include the dependencies
 
-The first thing to do is to include the 3 JavaScript dependencies within the head section 
-of your HTML page. Make sure that the version of Howler.js you include is the specific 
-Amplifon fork version as this contains extra code to support the 
-use of Web Audio API Low Pass Filters. Using this filter ensures that sounds become brighter 
-when positioned in front of the user. You can also find a minified version of the Amplifon 
-Howler.js in the js/vendor folder of this repo.
+The first thing to do is to include the 2 JavaScript dependencies within the head section 
+of your HTML page. You need to load the Google Maps API and jQuery.
 
 ```html
     <!-- Load the Google Maps API -->
     <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    
-    <!-- Load jQuery -->
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!-- Load the Amplifon fork of Howler.js -->
-    <script src="js/vendor/howler.min.js"></script>
+    <!-- Load the Sounds of Street View code -->
+    <script src="js/sosv.min.js"></script>
 ```
 
 ### Create an element on your page for the Google Street View instance

@@ -1,0 +1,36 @@
+{
+  "name": "Sounds-of-Street-View-Framework",
+  "version": "0.0.1",
+  "description": "none",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amplifon/Sounds-of-Street-View-Framework.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Amplifon",
+    "url": "http://www.amplifon.co.uk/sounds-of-street-view/"
+  },
+  "contributors": [
+    {
+      "name": "Amplifon",
+      "email": ""
+    }
+  ],
+  "client": {
+    "name": "Amplifon",
+    "string": "amplifon"
+  },
+  "project": {
+    "name": "Sounds Of Street View",
+    "title": "SoundsOfStreetView",
+    "string": "sounds-of-street-view"
+  },
+  "license": "",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}
