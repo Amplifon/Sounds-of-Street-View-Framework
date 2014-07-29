@@ -355,15 +355,16 @@ var SOSV = function(jsonPath){
 
 	this.addDevModeMarkup = function(){
 
-		var markerPos = $('<div id="marker-pos"></div>');
-		markerPos.append('<h2>Marker</h2>');
-		markerPos.append('<pre class="json-pre"></pre>');
+		var markerPos = $('<div id="marker-pos" ></div>');
+		markerPos.append('<h2>Marker</h2>').css({'margin':'1em 0 0.3em 0','border-bottom':'1px solid #181818','padding-bottom':'.4em'});
+		markerPos.append('<pre class="json-pre"></pre>').css({'line-height':'1.3em'});
+
 
 		var userPos = $('<div id="user-pos"></div>');
-		userPos.append('<h2>User</h2>').css({'margin':'0'});
+		userPos.append('<h2>User</h2>').css({'margin':'1em 0 0.3em 0','border-bottom':'1px solid #181818','padding-bottom':'.4em'});
 		userPos.append('<table><tr><td>Lat</td><td class="user-lat"></td></tr><tr><td>Lng</td><td class="user-lng"></td></tr><tr><td>Heading</td><td class="user-heading"></td></tr><tr><td>Pitch</td><td class="user-pitch"></td></tr></table>');
 
-		var debugWrap = $('<div id="debug-wrap"></div>').append(userPos).append(markerPos).css({'position':'absolute','top':'0','right':'0','padding':'.4em','background':'#fff'});
+		var debugWrap = $('<div id="debug-wrap"></div>').append(userPos).append(markerPos).css({'position':'absolute','min-width':'350px','font-family':'sans-serif','font-size':'1em','top':'10px','right':'10px','padding':'1.4em 2em','background':'#fff'});
 		$('body').append(debugWrap);
 	};
 
