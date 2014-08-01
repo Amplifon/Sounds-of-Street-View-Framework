@@ -147,6 +147,10 @@ should be a value between 1 and 100, with 1 being very quiet and 100 being very 
 The length of time to wait between each loop of the sound. This is a length of time in 
 milliseconds so a 1 second pause between each loop would have a pause value of 1000.
 
+**For more explanation on how the individual sound formulas come together, visit our collection of video explanations from our technical expert. https://vimeo.com/album/2977202**
+
+[![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/technical-talks.jpg)](https://vimeo.com/album/2977202)
+
 #### Location Suggestions
 
 Here is a list of great street view locations to get you started, with the lat and lng values already supplied!
