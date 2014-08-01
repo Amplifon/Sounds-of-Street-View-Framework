@@ -147,6 +147,16 @@ should be a value between 1 and 100, with 1 being very quiet and 100 being very 
 The length of time to wait between each loop of the sound. This is a length of time in 
 milliseconds so a 1 second pause between each loop would have a pause value of 1000.
 
+#### Location Suggestions
+
+Here is a list of great street view locations to get you started, with the lat and lng values already supplied!
+
+- [Millenium Park, Chicago](https://www.google.com/maps/@41.882772,-87.622462,3a,75y,96.25h,91.53t/data=!3m5!1e1!3m3!1sPyoeKzjCqY-mHhC42fCuTw!2e0!3e5) - "lat": "41.882772", "lng": "-87.622462"
+- [Central Park, New York](https://www.google.com/maps/@40.774459,-73.970928,3a,75y,151.6h,81.55t/data=!3m5!1e1!3m3!1sxPoyPnFWo0QqkK2NhUqRgw!2e0!3e5) - "lat": "40.774459", "lng": "-73.970928"
+- [Venice](https://www.google.co.uk/maps/@45.437134,12.333657,3a,75y,162.89h,71.81t/data=!3m4!1e1!3m2!1s2SPIL-tGMy9C7lupTyJJXg!2e0) - "lat": "45.437134", "lng": "12.333657"
+- [Rainforest, Manaus, Brazil](https://www.google.com/maps/@-2.945071,-60.676237,3a,75y,185.64h,85.85t/data=!3m5!1e1!3m3!1sYETFM_LVtG9vvRH_NAOI-A!2e0!3e2) - "lat": "-2.945071", "lng": "-60.676237"
+- [Florence, Italy](https://www.google.com/maps/@43.773421,11.25517,3a,75y,252.86h,86.84t/data=!3m5!1e1!3m3!1sdGeTbsAiR5Fw6RSpbHcESw!2e0!3e5) - "lat": "43.773421", "lng": "11.25517"
+
 #### Guide to placing sounds
 
 By adding **"?dev=true"** to the end of your URL, you will be able to see the markers which are normally invisible in your application. To start, once you have a street view location, give a sound the same **lat** and **long** values as this location, then find it by walking away from your start position.
