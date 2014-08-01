@@ -149,7 +149,7 @@ milliseconds so a 1 second pause between each loop would have a pause value of 1
 
 **For more explanation on how the individual sound formulas come together, visit our collection of video explanations from our technical expert. https://vimeo.com/album/2977202**
 
-[![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/technical-talks.jpg)](https://vimeo.com/album/2977202)
+[![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/62c6d6a277aaf3f32b752972b358a7880f99b29a/src/img/technical-talks.jpg)](https://vimeo.com/album/2977202)
 
 #### Location Suggestions
 
