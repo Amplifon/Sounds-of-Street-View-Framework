@@ -7,7 +7,7 @@ with the Sounds of Street View Framework.
 
 [![ScreenShot](https://raw.githubusercontent.com/Amplifon/Sounds-of-Street-View-Framework/master/src/img/vimeo-img.jpg)](https://vimeo.com/101599212)
 
-Explore three environments created by Amplifon on [the official Sounds of Street View website](http://www.amplifon.co.uk/sounds-of-street-view/).
+Explore three environments created by Amplifon on [the Sounds of Street View website](http://www.amplifon.co.uk/sounds-of-street-view/). Tell us about your Sounds of Street View project via [Email](mailto:kelly.ward@epiphanysolutions.co.uk) or [Twitter](https://twitter.com/intent/tweet?url=http%3A%2F%2Fexample.com&text=.%40amplifon%20Check%20out%20my%20Sounds%20of%20Street%20View%20experience%20here.) and you could win a trip of your choice! All entries are placed into our [Gallery Collection](http://www.amplifon.co.uk/sounds-of-street-view/gallery/index.html) too. View the [Terms and Conditions](http://www.amplifon.co.uk/about-amplifon/latest-amplifon-news/amplifon's-sounds-of-street-view-launches-with-development-competition/) for more information.
 
 ## Dependencies
 
