@@ -1,6 +1,6 @@
 # Sounds of Street View Framework
 
-###A JavaScript library to add sound to a Google Street View experience.
+### A JavaScript library to add sound to a Google Street View experience.
 
 Watch the promotional video for an explanation and overview of what can be achieved 
 with the Sounds of Street View Framework.
